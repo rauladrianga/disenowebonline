@@ -3,14 +3,24 @@ body
 
 
 
-	background:#EEEEEE;
+	background:rgba(0,0,22,.5) url(avatar.jpg) fixed;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
 	font-family: Arial;
 	font-size: 16px;
 }
-a{
+a:{
 
-	color:#22bcE0;
 
+	color:#fff;
+	text-decoration: none;
+	border-bottom:1px solid #f0c;
+
+}
+a:hover{
+
+
+	border: none;
 }
 header{
 	background:#343B54;
@@ -66,6 +76,18 @@ header #logo img{
 	padding-right: 0.5em;
 	width: 52px;
 
+}
+input{
+    font-size: large;
+    font-style: italic;
+    border: 3px solid #70C332;
+    color: white;
+    background: black;
+}
+
+input:focus{
+    background: #eee;
+    color:black;
 }
 footer{
 
@@ -140,7 +162,7 @@ nav ul li a{
 }
 #contenido{
 
-	margin:1em;
+	margin:2em;
 
 }
 
@@ -148,7 +170,7 @@ nav ul li a{
 
 
 	background: white;
-	border-bottom: 3px solid #22BCE0;
+	border-bottom: thick double #22BCE0;
 	position: relative;
 	min-height: 104px;
 	margin-bottom: 2em;
@@ -225,6 +247,10 @@ nav ul li a{
 
 	color: #444;
 	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: .5em;
+
+
 
 
 }
