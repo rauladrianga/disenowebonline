@@ -1,0 +1,144 @@
+{
+	"IcoMoonType": "selection",
+	"icons": [
+		{
+			"icon": {
+				"paths": [
+					"M1018.17 291.89l-286.058-286.058c-9.334-9.334-21.644-7.234-27.356 4.666l-38.354 79.904 267.198 267.198 79.904-38.354c11.9-5.712 14-18.022 4.666-27.356z",
+					"M615.384 135.384l-263.384 21.95c-17.5 2.166-32.080 5.898-37.090 28.752-0.006 0.024-0.012 0.042-0.018 0.066-71.422 343.070-314.892 677.848-314.892 677.848l57.374 57.374 271.986-271.99c-5.996-12.53-9.36-26.564-9.36-41.384 0-53.020 42.98-96 96-96s96 42.98 96 96-42.98 96-96 96c-14.82 0-28.852-3.364-41.384-9.36l-271.988 271.986 57.372 57.374c0 0 334.778-243.47 677.848-314.892 0.024-0.006 0.042-0.012 0.066-0.018 22.854-5.010 26.586-19.59 28.752-37.090l21.95-263.384-273.232-273.232z"
+				],
+				"attrs": [],
+				"tags": [
+					"pen",
+					"write",
+					"edit"
+				],
+				"defaultCode": 57367,
+				"grid": 16
+			},
+			"attrs": [],
+			"properties": {
+				"id": 74,
+				"order": 5,
+				"prevSize": 32,
+				"code": 59656,
+				"ligatures": "pen, write3",
+				"name": "Pluma"
+			},
+			"setIdx": 0,
+			"iconIdx": 8
+		},
+		{
+			"icon": {
+				"paths": [
+					"M1024 397.050l-353.78-51.408-158.22-320.582-158.216 320.582-353.784 51.408 256 249.538-60.432 352.352 316.432-166.358 316.432 166.358-60.434-352.352 256.002-249.538zM512 753.498l-223.462 117.48 42.676-248.83-180.786-176.222 249.84-36.304 111.732-226.396 111.736 226.396 249.836 36.304-180.788 176.222 42.678 248.83-223.462-117.48z"
+				],
+				"attrs": [],
+				"tags": [
+					"star-empty",
+					"rate",
+					"star",
+					"favorite",
+					"bookmark"
+				],
+				"defaultCode": 58111,
+				"grid": 16
+			},
+			"attrs": [],
+			"properties": {
+				"id": 863,
+				"order": 4,
+				"prevSize": 32,
+				"code": 59863,
+				"ligatures": "star-empty, rate",
+				"name": "Estrella"
+			},
+			"setIdx": 0,
+			"iconIdx": 215
+		},
+		{
+			"icon": {
+				"paths": [
+					"M512 32l-480 480h288v512h384v-512h288z"
+				],
+				"attrs": [],
+				"tags": [
+					"arrow-up",
+					"up",
+					"upload",
+					"top"
+				],
+				"defaultCode": 60873,
+				"grid": 16
+			},
+			"attrs": [],
+			"properties": {
+				"id": 1065,
+				"order": 3,
+				"prevSize": 32,
+				"code": 59954,
+				"ligatures": "arrow-up, up",
+				"name": "F-arriba"
+			},
+			"setIdx": 0,
+			"iconIdx": 306
+		},
+		{
+			"icon": {
+				"paths": [
+					"M512 992l480-480h-288v-512h-384v512h-288z"
+				],
+				"attrs": [],
+				"tags": [
+					"arrow-down",
+					"down",
+					"download",
+					"bottom"
+				],
+				"defaultCode": 60877,
+				"grid": 16
+			},
+			"attrs": [],
+			"properties": {
+				"id": 1069,
+				"order": 2,
+				"prevSize": 32,
+				"code": 59958,
+				"ligatures": "arrow-down, down",
+				"name": "F-abajo"
+			},
+			"setIdx": 0,
+			"iconIdx": 310
+		}
+	],
+	"height": 1024,
+	"metadata": {
+		"name": "icomoon"
+	},
+	"preferences": {
+		"showGlyphs": true,
+		"showQuickUse": true,
+		"showQuickUse2": true,
+		"showSVGs": true,
+		"fontPref": {
+			"prefix": "icon-",
+			"metadata": {
+				"fontFamily": "icomoon"
+			},
+			"metrics": {
+				"emSize": 1024,
+				"baseline": 6.25,
+				"whitespace": 50
+			}
+		},
+		"imagePref": {
+			"prefix": "icon-",
+			"png": true,
+			"useClassSelector": true,
+			"color": 4473924,
+			"bgColor": 16777215
+		},
+		"historySize": 100,
+		"showCodes": true
+	}
+}

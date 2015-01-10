@@ -1,12 +1,75 @@
+/*@font-face {
+    font-family: 'open_sansregular';
+    src: url('fuentes/OpenSans-Regular-webfont.eot');
+    src: url('fuentes/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fuentes/OpenSans-Regular-webfont.woff') format('woff'),
+         url('fuentes/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('fuentes/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*/
+@font-face {
+	font-family: 'icomoon';
+	src:url('fuentes/icomoon.eot?-tqora8');
+	src:url('fuentes/icomoon.eot?#iefix-tqora8') format('embedded-opentype'),
+		url('fuentes/icomoon.woff?-tqora8') format('woff'),
+		url('fuentes/icomoon.ttf?-tqora8') format('truetype'),
+		url('fuentes/icomoon.svg?-tqora8#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Pluma:before {
+	content: "\e908";
+	margin-right: 0.8em;
+}
+
+.icon-Estrella:before {
+	content: "\e9d7";
+	color: #FFBE2C;
+	margin-right: 0.4em;
+	position: relative;
+	top: .1em;
+
+}
+
+.icon-F-arriba:before {
+	content: "\ea32";
+}
+
+.icon-F-abajo:before {
+	content: "\ea36";
+	color: #DD4F24;
+
+	text-decoration: none;
+
+}
+
 body
 {
 
 
 
-	background:rgba(0,0,22,.5) url(avatar.jpg) fixed;
+	background:rgba(100,0,22,.5) url(avatar.jpg) fixed;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
-	font-family: Arial;
+	font-family: "Open Sans";
 	font-size: 16px;
 }
 a:{
@@ -27,6 +90,7 @@ header{
 	color:white; 
 	padding:0.5em;
 	overflow: hidden;
+
 	
 	position: relative;
 
@@ -41,11 +105,10 @@ header h1{
 	font-size: 1.2em;
 	font-weight: normal;
 	margin: 0.2em 5em 0 0;
-	
+	/*text-align: center;*/
 	position:absolute;
 	top:20px;
 	left:130px;
-
 
 }
 
@@ -67,16 +130,31 @@ header #avatar img{
 	margin: -70px 0 0 0px;
 	
 }
+header #logo{
+
+
+	
+	-moz-transform:rotate(90deg);/*Mozilla*/
+	border-right: 1px solid white;
+
+}
+
 header #logo img{
 
 	
 	
-	border-right: 1px solid white;
+	
 	margin-right: 0.5em;
 	padding-right: 0.5em;
 	width: 52px;
+	
+
 
 }
+header #logo img:hover{
+	transform:rotate(360deg);/*Chrome*/
+	transition:1s;
+	}
 input{
     font-size: large;
     font-style: italic;
@@ -87,14 +165,14 @@ input{
 
 input:focus{
     background: #eee;
-    color:black;
+    color:footer;
 }
 footer{
 
 
 	background: #22BCE0;
 	text-align: center;
-	color: white;
+	color: red;
 	padding: 1em;
 	color: rgba(255,255,255,0.7);
 }
@@ -122,9 +200,10 @@ footer p:last-child:after{
 nav{
 
 
-	background:#80BCA3;
-	padding: 0 0.5em;
+	background:#11A96A; /* Esto no afecta al diseño del comentario.*/
+	padding: 0 6em;
 	position: relative;
+	box-shadow: rgba(0,0,0,0.5) 0px 5px 10px;
 	}
 nav ul{
 
@@ -149,6 +228,15 @@ nav ul #publicar_nav a{
 	text-shadow:rgba(0,0,0,1) 2px 2px 5px;
 	box-shadow:rgba(0,0,0,1) 5px 5px 20px;
 	}
+nav ul #publicar_nav a:hover:before{
+
+
+		font-size: 20px;
+	}
+nav ul li a:hover{
+
+		background-color: #11BCE0;
+	}
 nav ul li{
 
 	display: inline-block;
@@ -159,7 +247,13 @@ nav ul li a{
 	color: white;
 	display: block;
 	padding: 0.5em 0; 
+	transition:.3s;
 }
+video {
+
+	display:none;
+}
+
 #contenido{
 
 	margin:2em;
@@ -175,10 +269,18 @@ nav ul li a{
 	min-height: 104px;
 	margin-bottom: 2em;
 }
+
+
 #contenido .item .autorcito_item{
 
 	color:#AAA;
 	border: 1px solid red;
+}
+#contenido .item .votacion a
+{
+
+
+	text-decoration: none;
 }
 #contenido .item .votacion .comentarios_item,
 #contenido .item .votacion .guardar_item{
@@ -254,5 +356,37 @@ nav ul li a{
 
 
 }
+/*@media print{
+	body{
+	font-size:50px; }
+}
+*/
+@media screen and (min-width:800px){	
+	body{
+
+		background-color: gray;
+	}
+	#contenido .item{
+
+		width: 49%;
+		display: inline-block;
+	}
+} /*Esto es un media query*/
+@media screen and (min-width:1000px){
+	video{
+	display: block;
+	float: right;
+	position: relative;
+	top: 3em;
+	width: 30%;
+	margin-right: 10em;
+	margin-bottom: 2em;
+
+	}
+	#contenido .item:nth-child(5), #contenido .item:nth-child(7)
+{
+	background-color: red;
+}
+
 
 
