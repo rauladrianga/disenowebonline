@@ -5,10 +5,11 @@
 	 	<meta name ="description" content="Proyecto de la primera generacion del 2014"/>
 	 	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
 	 	<title>Pulse2014, comunidad de personas atractivas e inteligentes</title>
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400' rel='stylesheet' type='text/css'> 
+		<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400' rel='stylesheet' type='text/css'>  -->
 		<link rel="stylesheet" href="normalize.css"/> 
 		<link rel="stylesheet" href="estilos.css"/>
 		<script type="text/javascript" src="prefixfree.js" ></script>
+
 
 </head>
 <body>
@@ -18,27 +19,39 @@
 			<h1>Pulse 2014: Comunidad de personas atractivas y sexy
 			</h1>
 		</figure>
-		<figure id="avatar">
-			<img src="avatar.jpg"/>
-		</figure>
+		<figure id="avatar"></figure>
 	</header>
 	<nav>
+
 		<ul>
 			<li><a href="#">HTML5</a></li>
-			<li><a href="#">JAVASCRIPT</a></li>
+			<li><a href="https://docs.google.com/file/d/0Bx15PkVODaq7c096QWlQZnM4UTA/edit">Libro JAVASCRIPT</a></li>
 			<li><a href="#">DJANGO</a></li>
-			<li><a href="#">CSS</a></li>
-			<li id="publicar_nav">
-				<a href="#"  class="icon-Pluma">Publicar</a> 
+			<li><a href="http://librojquery.com/">Libro jQuery</a></li>
+			<li id="publicar_nav" >
+				<a href="#"  data-nombre="pablo" class="icon-Pluma" id="mostrarform">Publicar</a> 
 			</li>
 
 		</ul>
 	</nav>
+	<form action="" id="formulario" class="formulario" onsubmit="return validation()">
+		<input type="text" id="titulo" required placeholder="Texto">
+		<input type="url" id="url" required placeholder="Url">
+		<input type="mail" name="correo"  id="correo" placeholder="Correo">
+		<input type="submit" value="Agregar">
 
-			<video autoplay controls>
+	</form>
+		<aside>
+
+					<video autoplay controls>
 					<source src="video.mp4" type="video/mp4">
+
 		
 			</video>
+
+			<div id="geo"><div id="clima"></div>
+			</div>
+		</aside>
 		
 	
 				
@@ -280,8 +293,33 @@
 		<p>
 			mejorando.la 2014
 		</p>
+		<div class="logos"></div>
 	</footer>
-	<p><label for="correo"> E-mail </label>
-	<input type="text" name="correo" id="correo" value="Ingrese correo"></p>
+	
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="formulario.js"></script>
+	<script src="alert.js"></script>
+	<script src="geo.js"></script>
+	<script src="ajax.js"></script>
+
+	<script>
+	
+
+			//Ejemplo
+		/*window.onload = function(){
+	};
+	$(document).on("ready",function(){
+
+
+		console.log("Ya se disparó el evento DOMConentLoader");
+	*/
+
+	$(function(){
+
+
+	});
+	</script>
+
+	
 </body>
 </html>
